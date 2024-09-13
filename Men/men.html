@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mad Commerce</title>
+</head>
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="../media.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Whisper&display=swap");
+</style>
+<body>
+  <div id="container">
+    <main id="main">
+      <div class="logo">
+        <a href="../index.html"><img src="../img/Screenshot 2024-09-01 003457.png" alt=""></a>
+      </div>
+      <div class="search-container">
+        <div class="search-bar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Category <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="dropdown-content" id="categoryDropdown">
+              <li><a href="../index.html">All</a></li>
+              <li><a href="../Men/men.html">Men</a></li>
+              <li><a href="../Jewellery/jewellery.html">Jewellery</a></li>
+              <li><a href="../Electronics/electronic.html">Electronics</a></li>
+              <li><a href="../Women/women.html">Women</a></li>
+            </ul>
+          </div>
+          <input type="text" placeholder="Search Amazon" class="search-input">
+          <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+
+      <div id="burger-menu" onclick="toggleNavbar()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="navbar-icons">
+        <a><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count"></span></a>
+        <a id="user-link" href="../login.html"><i class="fa-regular fa-user"></i></a>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <span id="close-cart">&times;</span>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+  </div>
+
+  <div id="products">
+    <h4 class="category"> Men </h4>
+    <div id="all-products"></div>
+  </div>
+  <!-- </main> -->
+
+  <footer id="footer">
+    <div class="foot">
+      <p>Mad Commerce</p>
+    </div>
+
+    <hr>
+
+    <div class="icons2">
+      <div class="icon-item">
+        <i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i>
+        <p>+91-98*****575</p>
+      </div>
+      <div class="icon-item">
+        <i class="fa-regular fa-envelope fa-lg" style="color: white;"></i>
+        <p>madcommerce@gmail.com</p>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-location-dot fa-lg" style="color: #eff1f5;"></i>
+        <p>One Neil Road #02-02,<br>Singapore 0833304</p>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <ul>
+        <p class="ul">About</p>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+      <ul>
+        <p class="ul">Company</p>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+      <ul>
+        <p class="ul">Resources</p>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+
+      <div class="sub">
+        <p>Subscribe</p>
+        <div class="input-container">
+          <input type="text" placeholder="Email Address" />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right fa-lg"></i>
+          </button>
+          <h6>Get digital marketing updates in your mailbox</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="footer2">
+    <div class="for-social">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+      </div>
+
+      <a class="arrow-up" href="#main"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; <span id="year"></span> Mad Commerce. All rights reserved.</p>
+    </div>
+  </div>
+
+  </main>
+  </div>
+
+
+
+
+</body>
+<script src="./men.js"></script>
+
+</html>
